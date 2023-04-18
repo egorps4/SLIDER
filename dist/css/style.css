@@ -1,0 +1,343 @@
+@charset "UTF-8";
+
+/*Обнуление*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav,
+footer,
+header,
+aside,
+section,
+main {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+input,
+button,
+textarea,
+select {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+/*--------------------*/
+
+body {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.no-webp .exclusive{
+  background-image: url(../img/mainblock/bg-2.jpg); }
+
+.exclusive {
+  position: relative;
+  padding: 97px 0 140px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.exclusive-swiper {
+  position: relative;
+  overflow: hidden;
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 60px 15px 20px 15px;
+}
+
+.exclusive-swiper__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  padding: 0 15px 0 15px;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.exclusive-swiper__slide {
+  width: 320px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding-right: 30px;
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  -o-transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+}
+
+.exclusive-swiper__slide:last-child {
+  padding: 0px;
+}
+
+.exclusive-swiper__slide.active {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  -o-transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+}
+
+.exclusive-swiper__button-prev {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  display: none;
+}
+
+.exclusive-swiper__button-prev img {
+  width: 25px;
+  height: 25px;
+}
+
+.exclusive-swiper__button-next {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+}
+
+.exclusive-swiper__button-next img {
+  width: 25px;
+  height: 25px;
+}
+
+.item-swiper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  height: 100%;
+  border: 1px solid #8DD83D;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.item-swiper__image {
+  max-width: 100%;
+}
+
+.item-swiper__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.item-swiper__body {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 22px 21px 43px 21px;
+  color: black;
+}
+
+.item-swiper__title {
+  margin: 0 0 16px 0;
+}
+
+.item-swiper__button {
+  padding: 0 21px 27px 21px;
+}
+
+.item-swiper__btn {
+  width: 100%;
+  min-height: 60px;
+}
+
+.btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 21px;
+  color: white;
+}
+
+.btn--green {
+  background-color: #8DD83D;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.btn--green:hover {
+  background-color: #507a23;
+  -webkit-transform: translate(0px, 2px);
+      -ms-transform: translate(0px, 2px);
+          transform: translate(0px, 2px);
+}
+
+.btn--gray {
+  background: -webkit-gradient(linear, left top, left bottom, from(#686C6F), to(#373A3C));
+  background: -o-linear-gradient(top, #686C6F 0%, #373A3C 100%);
+  background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.btn--gray:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#4a4a4e), to(#282e31));
+  background: -o-linear-gradient(top, #4a4a4e 0%, #282e31 100%);
+  background: linear-gradient(180deg, #4a4a4e 0%, #282e31 100%);
+  -webkit-transform: translate(0px, 2px);
+      -ms-transform: translate(0px, 2px);
+          transform: translate(0px, 2px);
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  right: -20px;
+  bottom: -5px;
+  width: 12px;
+  height: 16px;
+  background-image: url(../img/icons/arrow.svg);
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+
+.arrow.open {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  bottom: 5px;
+}
+
+.footer-title {
+  font-size: 18px;
+  color: #8DD83D;
+}
+
+@media (max-width: 479.98px) {
+  .exclusive {
+    padding: 30px 0 30px 0;
+  }
+
+  .exclusive-swiper__slide {
+    width: 220px;
+  }
+
+  .item-swiper__body {
+    padding: 15px 21px 15px 21px;
+  }
+}
+
+@media (max-height: 500px) {
+  .item-swiper {
+    max-width: 220px;
+  }
+
+  .item-swiper__body {
+    padding: 15px 21px 15px 21px;
+  }
+}
+
+.webp .exclusive{ background-image: url(../img/mainblock/bg-2.webp); }
